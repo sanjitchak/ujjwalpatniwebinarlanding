@@ -482,15 +482,15 @@
       text-align: center;
     }
 
-    .sp-webinar-embed .proof-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .results-section, .sp-webinar-embed .bonuses-section{
+    .sp-webinar-embed .proof-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .results-section{
       padding: 70px 0;
       border-bottom: 1px solid var(--sp-line);
     }
 
     .sp-webinar-embed .proof-section, .sp-webinar-embed .results-section{ background: var(--sp-bg); }
-    .sp-webinar-embed .blueprint-section, .sp-webinar-embed .bonuses-section{ background: var(--sp-surface); }
+    .sp-webinar-embed .blueprint-section{ background: var(--sp-surface); }
 
-    .sp-webinar-embed .proof-grid, .sp-webinar-embed .results-grid, .sp-webinar-embed .bonus-grid{
+    .sp-webinar-embed .proof-grid, .sp-webinar-embed .results-grid{
       display: grid;
       gap: 18px;
       margin-top: 34px;
@@ -499,10 +499,9 @@
     @media (min-width: 760px){
       .sp-webinar-embed .proof-grid{ grid-template-columns: repeat(4, 1fr); }
       .sp-webinar-embed .results-grid{ grid-template-columns: repeat(3, 1fr); }
-      .sp-webinar-embed .bonus-grid{ grid-template-columns: repeat(4, 1fr); }
     }
 
-    .sp-webinar-embed .proof-card, .sp-webinar-embed .result-card, .sp-webinar-embed .bonus-card{
+    .sp-webinar-embed .proof-card, .sp-webinar-embed .result-card{
       border: 1px solid var(--sp-line);
       border-radius: 14px;
       background: var(--sp-surface);
@@ -519,7 +518,7 @@
       line-height: 1.1;
     }
 
-    .sp-webinar-embed .proof-label, .sp-webinar-embed .result-card p, .sp-webinar-embed .bonus-card p{
+    .sp-webinar-embed .proof-label, .sp-webinar-embed .result-card p{
       margin: 8px 0 0;
       color: var(--sp-muted);
       font-size: 0.9rem;
@@ -559,44 +558,13 @@
 
     .sp-webinar-embed .blueprint-card p{ margin: 0; color: #D6D6D6; }
 
-    .sp-webinar-embed .result-icon, .sp-webinar-embed .bonus-icon{ font-size: 2rem; }
+    .sp-webinar-embed .result-icon{ font-size: 2rem; }
 
-    .sp-webinar-embed .result-card h3, .sp-webinar-embed .bonus-card h3{
+    .sp-webinar-embed .result-card h3{
       margin: 12px 0 0;
       color: var(--sp-white);
       font-family: "Montserrat", sans-serif;
       font-size: 1.05rem;
-    }
-
-    .sp-webinar-embed .bonus-card{
-      position: relative;
-      overflow: hidden;
-      text-align: left;
-      background: linear-gradient(155deg, #202020, #101010);
-    }
-
-    .sp-webinar-embed .bonus-card::after{
-      content: "FREE";
-      position: absolute;
-      right: -26px;
-      top: 18px;
-      width: 100px;
-      background: var(--sp-gold);
-      color: #111;
-      font-size: .68rem;
-      font-weight: 900;
-      padding: 4px 0;
-      text-align: center;
-      transform: rotate(45deg);
-    }
-
-    .sp-webinar-embed .bonus-value{
-      display: inline-block;
-      margin-top: 14px;
-      color: var(--sp-gold);
-      font-size: .78rem;
-      font-weight: 800;
-      text-transform: uppercase;
     }
 
     .sp-webinar-embed .sticky-cta{ display: none; }
@@ -1569,14 +1537,14 @@
     .sp-webinar-embed .section-cta-note{ margin: 8px 0 0; color: #6C7480; font-size: .8rem; }
 
     .sp-webinar-embed section{ scroll-margin-top: 20px; }
-    .sp-webinar-embed .media-section, .sp-webinar-embed .proof-section, .sp-webinar-embed .comp-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .why-section, .sp-webinar-embed .master-section, .sp-webinar-embed .qualify-section, .sp-webinar-embed .coach-section, .sp-webinar-embed .results-section, .sp-webinar-embed .awards-section, .sp-webinar-embed .bonuses-section, .sp-webinar-embed .registration, .sp-webinar-embed .faq-section{
+    .sp-webinar-embed .media-section, .sp-webinar-embed .proof-section, .sp-webinar-embed .comp-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .why-section, .sp-webinar-embed .master-section, .sp-webinar-embed .qualify-section, .sp-webinar-embed .coach-section, .sp-webinar-embed .results-section, .sp-webinar-embed .awards-section, .sp-webinar-embed .registration, .sp-webinar-embed .faq-section{
       padding: 64px 0;
       border-bottom: 0;
       background: transparent;
       color: #212529;
     }
 
-    .sp-webinar-embed .proof-section, .sp-webinar-embed .results-section, .sp-webinar-embed .bonuses-section, .sp-webinar-embed .registration{
+    .sp-webinar-embed .proof-section, .sp-webinar-embed .results-section, .sp-webinar-embed .registration{
       background: rgba(255, 248, 222, .92);
       border-top: 1px solid #F1DFA6;
       border-bottom: 1px solid #F1DFA6;
@@ -1612,7 +1580,7 @@
     }
 
     .sp-webinar-embed .proof-number{ color: #242323; }
-    .sp-webinar-embed .proof-label, .sp-webinar-embed .result-card p, .sp-webinar-embed .bonus-card p{ color: #626B78; }
+    .sp-webinar-embed .proof-label, .sp-webinar-embed .result-card p{ color: #626B78; }
 
     .sp-webinar-embed .testimonial-quote, .sp-webinar-embed .blueprint-card{
       border: 1px solid #FFC3AF;
@@ -1883,17 +1851,6 @@
     .sp-webinar-embed .award-card p{ color: #555E6A; }
     .sp-webinar-embed .award-card small{ color: #FF3D00; }
 
-    .sp-webinar-embed .bonus-grid{ gap: 18px; }
-    .sp-webinar-embed .bonus-card{
-      min-height: 300px;
-      border: 1px solid #DDE2EA;
-      background: #FFFFFF;
-      box-shadow: 0 8px 24px rgba(22, 42, 75, .08);
-    }
-    .sp-webinar-embed .bonus-card h3{ color: #242323; }
-    .sp-webinar-embed .bonus-card::after{ background: #FF3D00; color: #FFFFFF; }
-    .sp-webinar-embed .bonus-value{ color: #FF3D00; }
-
     .sp-webinar-embed .reminder-strip{ border-color: #FFC3AF; background: #FFF8DE; }
     .sp-webinar-embed .reminder-item small{ color: #FF3D00; }
     .sp-webinar-embed .form-card{ border: 1px solid #DDE3EC; background: #FFFFFF; box-shadow: 0 12px 32px rgba(21, 40, 72, .1); }
@@ -1972,12 +1929,12 @@
       .sp-webinar-embed .hero-facts{ grid-template-columns: 1fr 1fr; }
       .sp-webinar-embed .hero-fact{ min-height: 135px; padding: 14px 8px; }
       .sp-webinar-embed .hero-fact strong{ font-size: .78rem; }
-      .sp-webinar-embed .media-section, .sp-webinar-embed .proof-section, .sp-webinar-embed .comp-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .why-section, .sp-webinar-embed .master-section, .sp-webinar-embed .qualify-section, .sp-webinar-embed .coach-section, .sp-webinar-embed .results-section, .sp-webinar-embed .awards-section, .sp-webinar-embed .bonuses-section, .sp-webinar-embed .registration, .sp-webinar-embed .faq-section{ padding: 46px 0; }
-      .sp-webinar-embed .proof-grid, .sp-webinar-embed .results-grid, .sp-webinar-embed .bonus-grid{ grid-template-columns: 1fr; }
+      .sp-webinar-embed .media-section, .sp-webinar-embed .proof-section, .sp-webinar-embed .comp-section, .sp-webinar-embed .blueprint-section, .sp-webinar-embed .why-section, .sp-webinar-embed .master-section, .sp-webinar-embed .qualify-section, .sp-webinar-embed .coach-section, .sp-webinar-embed .results-section, .sp-webinar-embed .awards-section, .sp-webinar-embed .registration, .sp-webinar-embed .faq-section{ padding: 46px 0; }
+      .sp-webinar-embed .proof-grid, .sp-webinar-embed .results-grid{ grid-template-columns: 1fr; }
       .sp-webinar-embed .proof-card, .sp-webinar-embed .result-card{ min-height: 155px; }
       .sp-webinar-embed .master-grid, .sp-webinar-embed .coach-grid{ gap: 30px; }
       .sp-webinar-embed .master-photo img{ min-height: 360px; }
-      .sp-webinar-embed .award-card, .sp-webinar-embed .bonus-card{ min-height: auto; }
+      .sp-webinar-embed .award-card{ min-height: auto; }
       .sp-webinar-embed .career-section{ padding: 48px 0 52px; }
       .sp-webinar-embed .career-heading-row{ align-items: flex-end; justify-content: space-between; gap: 12px; padding-inline: 16px; }
       .sp-webinar-embed .career-heading-row .section-title{ max-width: 250px; text-align: left; font-size: 1.65rem; }
@@ -2029,7 +1986,7 @@
         <div class="hero-facts">
           <div class="hero-fact"><span>📅</span><small>Date</small><strong>Thursday, 13 August</strong></div>
           <div class="hero-fact"><span>🕒</span><small>Live Session</small><strong>9:00 AM to 10:30 AM</strong></div>
-          <div class="hero-fact"><span>🎁</span><small>Free Tools</small><strong>Worth ₹5,000</strong></div>
+          <div class="hero-fact"><span>🎯</span><small>Format</small><strong>90-Minute Live Class</strong></div>
           <div class="hero-fact"><span>💻</span><small>Place</small><strong>Live Online</strong></div>
         </div>
       </div>
@@ -2234,8 +2191,8 @@
 
         <div class="why-card">
           <div class="why-card-icon">💎</div>
-          <h3>Free Work Tools</h3>
-          <p>Get simple guides that help you use what you learn.</p>
+          <h3>Clear Action Steps</h3>
+          <p>Leave with simple steps you can start using right away.</p>
         </div>
       </div>
     </div>
@@ -2480,24 +2437,7 @@
       </div>
       <div class="section-cta-wrap">
         <a class="section-cta" href="#sp-register">Reserve My Free Seat Today</a>
-        <p class="section-cta-note">Only 100 free seats are open.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bonuses-section">
-    <div class="container">
-      <h2 class="section-title text-center">Free Tools With <span class="gold">Your Seat</span></h2>
-      <p class="section-subtitle text-center">Get four simple tools that help you take action</p>
-      <div class="bonus-grid">
-        <div class="bonus-card"><div class="bonus-icon">📊</div><h3>Business Growth Scorecard</h3><p>Find the strong and weak parts of your business.</p><span class="bonus-value">Action Tool</span></div>
-        <div class="bonus-card"><div class="bonus-icon">⏱️</div><h3>2-Hour CEO Planner</h3><p>Plan the daily work that can help your business grow.</p><span class="bonus-value">Daily Planner</span></div>
-        <div class="bonus-card"><div class="bonus-icon">🧩</div><h3>Team Hiring Checklist</h3><p>Use clear steps to check and train each new person.</p><span class="bonus-value">Hiring Tool</span></div>
-        <div class="bonus-card"><div class="bonus-icon">🤝</div><h3>Customer Plan Sheet</h3><p>Map each step a buyer takes and find where sales are lost.</p><span class="bonus-value">Sales Tool</span></div>
-      </div>
-      <div class="section-cta-wrap">
-        <a class="section-cta" href="#sp-register">Claim My Seat and Free Tools</a>
-        <p class="section-cta-note">No card or payment needed.</p>
+        <p class="section-cta-note">Limited free seats are open.</p>
       </div>
     </div>
   </section>
@@ -2505,7 +2445,7 @@
   <!-- SECTION 9: REGISTRATION FORM -->
   <section class="registration" id="sp-register">
     <div class="container">
-      <h2 class="section-title text-center">Mera Free Seat Claim Karein. <span class="gold">Only 100 Seats.</span></h2>
+      <h2 class="section-title text-center">Mera Free Seat Claim Karein. <span class="gold">Limited Seats.</span></h2>
       <p class="reg-sub">This 90-minute class is worth Rs 5,000. Your seat is free today.</p>
 
       <div class="reminder-strip">
@@ -2824,7 +2764,7 @@
         Questions? Call <a href="tel:+918878759999">+91 88787 59999</a> or <a href="https://wa.me/918878759999" target="_blank" rel="noopener">WhatsApp us</a>.
       </p>
 
-      <p class="scarcity-line">Once 100 seats fill, registration closes. There is no replay.</p>
+      <p class="scarcity-line">Registration closes when the limited seats are taken. There is no replay.</p>
     </div>
   </section>
 
@@ -2845,13 +2785,8 @@
         </div>
 
         <div class="faq-item">
-          <h3 class="faq-question">3. When will I get my bonuses?</h3>
-          <p class="faq-answer">You will get the tools after you attend the live class.</p>
-        </div>
-
-        <div class="faq-item">
-          <h3 class="faq-question">4. Is the masterclass really free?</h3>
-          <p class="faq-answer">Yes. It is free today. Each class has only 100 free seats.</p>
+          <h3 class="faq-question">3. Is the masterclass really free?</h3>
+          <p class="faq-answer">Yes. It is free today. Seats are limited.</p>
         </div>
       </div>
     </div>
